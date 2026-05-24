@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saylani - Gallery</title>
+    <link rel="shortcut icon" href="./images/fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="sliderengine/jquery.js"></script>
+    <script src="sliderengine/amazingslider.js"></script>
+    <link rel="stylesheet" type="text/css" href="sliderengine/amazingslider-1.css">
+    <script src="sliderengine/initslider-1.js"></script>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+
+    header{
+        background-color: darkcyan;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 10vh;
+        padding: 18px 25px;
+        font-size: 17px;
+    }
+
+    .logo{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    nav ul{
+        display: flex;
+        gap: 40px;
+        list-style-type: none;
+    }
+
+    li a{
+        text-decoration: none;
+        color: white;
+    }
+
+    main{
+        margin: 0;
+        padding: 0;
+    }
+
+    .slider-section{
+        height: 90vh;
+        overflow: hidden;
+    }
+
+    .gallery-section{
+        padding: 45px 30px;
+        background-color: floralwhite;
+    }
+
+    .gallery-section h1{
+        text-align: center;
+        color: darkcyan;
+        font-size: 36px;
+        margin-bottom: 30px;
+        text-decoration: underline;
+    }
+
+    .gallery{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .gallery-img{
+        width: 23%;
+        background-color: white;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .gallery-img img{
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 8px;
+        display: block;
+    }
+
+    .gallery-img p{
+        text-align: center;
+        color: darkcyan;
+        font-size: 15px;
+        font-weight: bold;
+        margin-top: 8px;
+    }
+
+    footer{
+        min-height: 25vh;
+        background-color: darkcyan;
+        color: white;
+    }
+
+    footer p{
+        text-align: center;
+        font-size: 15px;
+        padding-top: 60px;
+    }
+</style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="./images/smit logo.png" alt="logo" height="30" width="40">
+            <h2>Saylani Mass IT.</h2>
+        </div>
+
+        <nav>
+            <ul>
+<li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+<li><a href="about.html#about"><i class="fa-solid fa-circle-info"></i> About</a></li>
+<li><a href="#"><i class="fa-solid fa-image"></i> Gallery</a></li>
+<li><a href="contact.html#contact"><i class="fa-solid fa-phone"></i> Contact Us</a></li>
+<li><a href="services.html#service"><i class="fa-solid fa-hand-holding-heart"></i> Services</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="slider-section">
+            <div class="amazingslider-wrapper" id="amazingslider-wrapper-1" style="display:block;position:relative;max-width:100%;height:100%;margin:0 auto;">
+                <div class="amazingslider" id="amazingslider-1" style="display:block;position:relative;margin:0 auto;">
+                    <ul class="amazingslider-slides" style="display:none;">
+                        <li>
+                            <img src="images/Smit.png" />
+                        </li>
+
+                        <li>
+                            <img src="images/register.png" />
+                            <a href="https://www.saylanimit.com/enroll" target="_blank">
+                                <button class="amazingsliderbutton as-btn-navy-large">Enroll Now</button>
+                            </a>
+                        </li>
+
+                        <li>
+                            <img src="images/lms.png" />
+                            <a href="https://lms.saylanimit.com/login" target="_blank">
+                                <button class="amazingsliderbutton as-btn-navy-large">Click Here!</button>
+                            </a>
+                        </li>
+
+                        <li>
+                            <img src="images/you.png" />
+                            <a href="https://www.youtube.com/@SaylaniMassITTraining" target="_blank">
+                                <button class="amazingsliderbutton as-btn-navy-large">Youtube Channel</button>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="amazingslider-thumbnails" style="display:none;">
+                        <li><img src="images/Smit-tn.png" /></li>
+                        <li><img src="images/register-tn.png" /></li>
+                        <li><img src="images/lms-tn.png" /></li>
+                        <li><img src="images/you-tn.png" /></li>
+                    </ul>
+
+                    <div class="amazingslider-engine">
+                        <a href="http://amazingslider.com" title="Responsive jQuery Image Slideshow">Responsive jQuery Image Slideshow</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-section" id="gallery">
+            <h1>Gallery</h1>
+
+            <div class="gallery">
+                <div class="gallery-img">
+                    <img src="https://saylaniwelfare.com/_next/image?q=75&url=https%3A%2F%2Fsaylaniwelfare.com%2Fapi%2Fmedia%2Ffile%2FSMIT.jpg&w=3840" alt="SMIT Computer Lab">
+                    
+                </div>
+                <div class="gallery-img">
+                    <img src="https://saylaniwebproject-20615.firebaseapp.com/images/photos/massTraining.jpg" alt="Saylani Mass Training Lab">
+                    
+                </div>
+                <div class="gallery-img">
+                    <img src="https://saylaniwelfare.com/_next/image?q=75&url=%2Fstatic%2Fservices%2Fsmit.webp&w=3840" alt="SMIT Graduation">
+                    
+                </div>
+                <div class="gallery-img">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkF0XRr5hTRkfjlNASDKMCUPEgj4bDhcQXEQ&s" alt="Saylani IT Education">
+                    
+                </div>
+                <div class="gallery-img">
+                    <img src="https://saylaniwelfare.com/_next/image?q=75&url=https%3A%2F%2Fsaylaniwelfare.com%2Fapi%2Fmedia%2Ffile%2F51e53916-81e2-49af-8620-b723bf545ba1.jpg&w=3840" alt="Mega IT Exam Students">
+                    
+                </div>
+                <div class="gallery-img">
+                    <img src="https://www.thenews.com.pk/assets/uploads/akhbar/2025-02-04/1279289_5440611_ad_akhbar.jpg" alt="Mega IT Exam Event">
+                    
+                </div>
+                <div class="gallery-img">
+                    <img src="https://ummat.net/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-12-at-8.43.58-PM-1000x720.jpeg" alt="Saylani Entry Test">
+                    
+                </div>
+                <div class="gallery-img">
+                    <img src="https://saylaniwelfare.com/_next/image?q=75&url=https%3A%2F%2Fsaylaniwelfare.com%2Fapi%2Fmedia%2Ffile%2Fit-park-cover.jpeg&w=3840" alt="Saylani IT Park">
+                    
+                </div>
+                <div class="gallery-img">
+                    <img src="https://alliedfsd.com/Images/facilities/Computer%20Lab.jpg" alt="Computer Lab Practice">
+                    
+                </div>
+                <div class="gallery-img">
+                    <img src="https://alliedfsd.com/Images/facilities/Classes.jpg" alt="Class Room">
+                    
+                </div>
+                <div class="gallery-img">
+                    <img src="https://alliedfsd.com/Images/facilities/Science%20Lab.jpg" alt="Science Lab">
+                                    </div>
+                <div class="gallery-img">
+                    <img src="https://saylaniwelfare.com/_next/image?q=75&url=https%3A%2F%2Fsaylaniwelfare.com%2Fapi%2Fmedia%2Ffile%2Fchild-education.jpg&w=3840" alt="Education Support">
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; Copyright 2026. All Rights Reserved | Design By Talha BaiG😎</p>
+    </footer>
+
+</body>
+</html>
